@@ -1,89 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<style type="text/css">
-		* {
-			padding: 0;
-			margin: 0;
-			font-family: Ardela edge;
-		}
-
-		.loader-ring {
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  margin: -120px 0 0 -120px;
-		  width: 240px;
-		  height: 240px;
-		}
-
-		.loader-ring-light {
-		  width: 240px;
-		  height: 240px;
-		  -moz-border-radius: 240px;
-		  -webkit-border-radius: 240px;
-		  border-radius: 240px;
-		  -moz-box-shadow: 0 4px 0 lime inset;
-		  -webkit-box-shadow: 0 4px 0 lime inset;
-		  box-shadow: 0 4px 0 lime inset;
-		  animation: rotate-360 2s linear infinite;
-		}
-
-		.loader-ring-track {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 240px;
-		  height: 240px;
-		  -moz-border-radius: 240px;
-		  -webkit-border-radius: 240px;
-		  border-radius: 240px;
-		  -moz-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3) inset;
-		  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3) inset;
-		  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3) inset;
-		}
-
-		@keyframes rotate-360 {
-		  from {
-		    -moz-transform: rotate(0);
-		    -ms-transform: rotate(0);
-		    -webkit-transform: rotate(0);
-		    transform: rotate(0);
-		  }
-		  to {
-		    -moz-transform: rotate(360deg);
-		    -ms-transform: rotate(360deg);
-		    -webkit-transform: rotate(360deg);
-		    transform: rotate(360deg);
-		  }
-		}
-
-		h1, h4 {
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  margin: -20px 0 0 -50px;
-		  width: 240px;
-		  height: 240px;
-		}
-
-		h4 {
-		  	margin: 12px 0 0 -50px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//db.onlinewebfonts.com/c/2c89eca877ffb0f22a0545301a99e53c?family=Ardela+Edge" rel="stylesheet" type="text/css"/>
+    <style>
+        h1, h4, h3 {    
+            position: absolute;
+            font-size: 140px;
+            font-family: "Ardela Edge";
+            top: 50%;
+            left: 50%;
+            margin-top: -200px;
+            margin-left: -200px;
+        }
+        h4, h3 {
+            font-size: 23px;
+            margin-top: -30px;
+            margin-left: -168px;
+            font-weight: 100;
+        }
+        h3 {
+            font-size: 40px;
+            margin-left: -200px;
+            margin-top: 40px;
+        }
+        .dots {
+            width: 80px;
+            height: 25px;
+            margin-top: 40px;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .dot {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            animation: dots 1s ease-in-out infinite;
+        }
+        @keyframes dots {
+            50% {
+                margin-top: -30px;
+            }
+        }
+        .dot:nth-child(1) {
+            animation-delay: 0;
+        } 
+        .dot:nth-child(2) {
+            animation-delay: .3s;
+        } 
+        .dot:nth-child(3) {    
+            animation-delay: .5s;
+        } 
+    </style>
 </head>
 <body>
-	<div class='loader-ring'>
-	 	<div class='loader-ring-light'></div>
-	  	<div class='loader-ring-track'></div>
-	</div>
-	<div class="logo">
-	  	<h1>ITC 21</h1>
-		<h4>Soon</h4>
-	</div>
-
+    <h1>ITC-21</h1>
+    <h4>We are the next generation</h4>
+    <h3>
+        Hozircha <br> Profilaktika Ishlari <br> Olib Borilmoqda
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </h3>
 </body>
 </html>
