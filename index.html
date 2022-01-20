@@ -1,40 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <style>
-    * {
-        font-family: Ardela Edge;
-    }
-    font {
-        font-size: 100px;
-    } 
-  </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: Ardela edge;
+		}
+
+		.loader-ring {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  margin: -120px 0 0 -120px;
+		  width: 240px;
+		  height: 240px;
+		}
+
+		.loader-ring-light {
+		  width: 240px;
+		  height: 240px;
+		  -moz-border-radius: 240px;
+		  -webkit-border-radius: 240px;
+		  border-radius: 240px;
+		  -moz-box-shadow: 0 4px 0 lime inset;
+		  -webkit-box-shadow: 0 4px 0 lime inset;
+		  box-shadow: 0 4px 0 lime inset;
+		  animation: rotate-360 2s linear infinite;
+		}
+
+		.loader-ring-track {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 240px;
+		  height: 240px;
+		  -moz-border-radius: 240px;
+		  -webkit-border-radius: 240px;
+		  border-radius: 240px;
+		  -moz-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3) inset;
+		  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3) inset;
+		  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3) inset;
+		}
+
+		@keyframes rotate-360 {
+		  from {
+		    -moz-transform: rotate(0);
+		    -ms-transform: rotate(0);
+		    -webkit-transform: rotate(0);
+		    transform: rotate(0);
+		  }
+		  to {
+		    -moz-transform: rotate(360deg);
+		    -ms-transform: rotate(360deg);
+		    -webkit-transform: rotate(360deg);
+		    transform: rotate(360deg);
+		  }
+		}
+
+		h1, h4 {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  margin: -20px 0 0 -50px;
+		  width: 240px;
+		  height: 240px;
+		}
+
+		h4 {
+		  	margin: 12px 0 0 -50px;
+		}
+	</style>
 </head>
 <body>
-  <div id="app">
-    <v-app>
-      <v-main>
-        <v-container class="pt-15 d-flex flex-column justify-center align-center">
-            <v-text-field color="pink" class="mt-15" loading disabled></v-text-field>
-            <h1 class="pink--text darken-7">Hozircha profilaktika ishlari olib borilmoqda.</h1>
-            <font class="pink--text darken-7">ITC-21</font>
-            <h2>We Are The Next Generation</h2>
-        </v-container>
-      </v-main>
-    </v-app>
-  </div>
+	<div class='loader-ring'>
+	  <div class='loader-ring-light'></div>
+	  <div class='loader-ring-track'></div>
+	</div>
+	<div class="logo">
+		<h1>ITC-21</h1>
+		<h4>Soon</h4>
+	</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-  <script>
-    new Vue({
-      el: '#app',
-      vuetify: new Vuetify(),
-    })
-  </script>
 </body>
 </html>
