@@ -4,172 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT-club 21</title>
-    <link href="//db.onlinewebfonts.com/c/2c89eca877ffb0f22a0545301a99e53c?family=Ardela+Edge" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
     <style>
         * {
-            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            font-family: Ardela Edge X03;
         }
-        h1, h4, h3 {    
+        body {
+            background-image: url(5313770.jpg);
+            background-size: 100;
+        }
+        div {
             position: absolute;
-            font-size: 140px;
-            font-family: "Ardela Edge";
             top: 50%;
             left: 50%;
-            margin-top: -200px;
             margin-left: -200px;
+            margin-top: -50px;
         }
-        h4, h3 {
-            font-size: 23px;
-            margin-top: -30px;
-            margin-left: -168px;
-            font-weight: 100;
+        h1 {
+            font-size: 80px;
         }
-        h3 {
-            font-size: 40px;
-            margin-left: -200px;
-            margin-top: 90px;
-            background: linear-gradient(to right, #4d4d4d 0, rgb(42, 34, 114) 20%, #4d4d4d 30%);
-            background-position: 0;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 2s infinite linear;
-            animation-fill-mode: forwards;
-            -webkit-text-size-adjust: none
-        }
-        @keyframes shine {
-            0% {
-                background-position: 0;
-            }
-            100% {
-                background-position: 420px;
-            }
-        }
-        svg {
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            transform: rotate(180deg);
-            top: 50%;
-            left: 50%;
-            margin-left: -500px;
-            margin-top: -306px;
-            fill: rgb(42, 34, 114);
-        }
-        svg:nth-child(2) {
-            width: 400px;
-            height: 400px;
-            margin-left: -696px;
-            fill: black;
-        }
-        svg:nth-child(3) {
-            width: 700px;
-            height: 700px;
-            transform: rotate(360deg);
-            margin-left: 200px;
-            margin-top: -320px;
-            fill: black;
-        }
-
-        @media all and (max-width: 1300px) and (min-width: 1200px) {
-            svg:nth-child(3) {   
-                width: 500px;
-                height: 500px;
-                margin-top: -220px;
-            }
-        }
-        @media all and (max-width: 1200px) and (min-width: 50px) {
-            svg {   
+        @media all and (max-width: 450px) and (min-width: 50px) {
+            span {
                 display: none;
             }
         }
-        @media all and (max-width: 700px) and (min-width: 600px) {
-            h1 {
-                font-size: 100px;
-                margin-top: -150px;
-                margin-left: -150px;
-            }
-            h4 {
-                font-size: 15px;
-                margin-top: -30px;
+        @media all and (max-width: 400px) and (min-width: 300px) {
+            div {
                 margin-left: -120px;
+                margin-top: -100px;
             }
-            h3 {
-                font-size: 30px;
-                margin-left: -150px;
-                margin-top: 90px;
+            h1 {
+                font-size: 90px;
             }
         }
-        @media all and (max-width: 600px) and (min-width: 400px) {
-            h1 {
-                font-size: 100px;
+        @media all and (max-width: 300px) and (min-width: 200px) {
+            div {
+                margin-left: -110px;
                 margin-top: -150px;
-                margin-left: -150px;
             }
-            h4 {
-                font-size: 15px;
-                margin-top: -30px;
-                margin-left: -120px;
-            }
-            h3 {
-                font-size: 30px;
-                margin-left: -150px;
-                margin-top: 90px;
-            }
-            @keyframes shine {
-                0% {
-                    background-position: 0;
-                }
-                100% {
-                    background-position: 300px;
-                }
-            }
-        }
-        @media all and (max-width: 400px) and (min-width: 100px) {
             h1 {
-                font-size: 50px;
-                margin-top: -150px;
-                margin-left: -80px;
-            }
-            h4 {
-                font-size: 15px;
-                margin-top: -80px;
-                margin-left: -120px;
-            }
-            h3 {
-                font-size: 30px;
-                margin-left: -100px;
-                margin-top: 90px;
-            }
-            @keyframes shine {
-                0% {
-                    background-position: 0;
-                }
-                100% {
-                    background-position: 250px;
-                }
+                font-size: 70px;
             }
         }
     </style>
 </head>
 <body>
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
-        <g>
-            <path d="m249.9,11.1c-76.1,3.1-139.7,65.7-142.8,141.8-2.1,39.6 11.5,78.2 38.6,107.4 37.5,40.7 57.3,91.7 57.3,144.9 0,0.2 0,64.6 0,64.6 0,6.3 4.2,10.4 10.4,10.4h32.3v10.4c0,6.3 4.2,10.4 10.4,10.4 6.3,0 10.4-4.2 10.4-10.4v-10.4h32.3c5.2,0 10.4-5.2 10.4-10.4 0,0 0-64.5 0-64.6 0-54.2 19.8-104.2 55.2-142.8 26.1-28.1 40.7-64.6 40.7-102.1 0.1-84.6-69.8-152.3-155.2-149.2zm38.5,448.2h-64.6v-42.7h64.6v42.7zm61.5-211.6c-37.5,39.6-59.4,91.7-61.5,147h-64.6c-3.1-54.2-25-106.3-62.5-148-22.9-26.1-35.4-58.4-33.4-92.8 3.1-65.7 57.3-118.8 123-122 73-3.1 133.4,56.3 133.4,128.2 5.68434e-14,32.4-12.5,63.6-34.4,87.6z"/>
-        </g>
-    </svg>  
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
-        <g>
-          <path d="m249.9,11.1c-76.1,3.1-139.7,65.7-142.8,141.8-2.1,39.6 11.5,78.2 38.6,107.4 37.5,40.7 57.3,91.7 57.3,144.9 0,0.2 0,64.6 0,64.6 0,6.3 4.2,10.4 10.4,10.4h32.3v10.4c0,6.3 4.2,10.4 10.4,10.4 6.3,0 10.4-4.2 10.4-10.4v-10.4h32.3c5.2,0 10.4-5.2 10.4-10.4 0,0 0-64.5 0-64.6 0-54.2 19.8-104.2 55.2-142.8 26.1-28.1 40.7-64.6 40.7-102.1 0.1-84.6-69.8-152.3-155.2-149.2zm38.5,448.2h-64.6v-42.7h64.6v42.7zm61.5-211.6c-37.5,39.6-59.4,91.7-61.5,147h-64.6c-3.1-54.2-25-106.3-62.5-148-22.9-26.1-35.4-58.4-33.4-92.8 3.1-65.7 57.3-118.8 123-122 73-3.1 133.4,56.3 133.4,128.2 5.68434e-14,32.4-12.5,63.6-34.4,87.6z"/>
-        </g>
-    </svg>  
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
-        <g>
-          <path d="m249.9,11.1c-76.1,3.1-139.7,65.7-142.8,141.8-2.1,39.6 11.5,78.2 38.6,107.4 37.5,40.7 57.3,91.7 57.3,144.9 0,0.2 0,64.6 0,64.6 0,6.3 4.2,10.4 10.4,10.4h32.3v10.4c0,6.3 4.2,10.4 10.4,10.4 6.3,0 10.4-4.2 10.4-10.4v-10.4h32.3c5.2,0 10.4-5.2 10.4-10.4 0,0 0-64.5 0-64.6 0-54.2 19.8-104.2 55.2-142.8 26.1-28.1 40.7-64.6 40.7-102.1 0.1-84.6-69.8-152.3-155.2-149.2zm38.5,448.2h-64.6v-42.7h64.6v42.7zm61.5-211.6c-37.5,39.6-59.4,91.7-61.5,147h-64.6c-3.1-54.2-25-106.3-62.5-148-22.9-26.1-35.4-58.4-33.4-92.8 3.1-65.7 57.3-118.8 123-122 73-3.1 133.4,56.3 133.4,128.2 5.68434e-14,32.4-12.5,63.6-34.4,87.6z"/>
-        </g>
-    </svg>          
-    <h1>ITC-21</h1>
-    <h4>We are the next generation</h4>
-    <h3>Hozircha <br> Profilaktika Ishlari <br> Olib Borilmoqda</h3>
+    <div id="app">
+        <h1>ITC-21 <span>|</span> <font size="6">IT-CLUB</font></h1>
+        <h4>{{day}} days left</h4>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                day: new Date().getDate() 
+            },
+            computed: {
+                days: function(){
+                    return 30 - this.day
+                }
+            }
+        })
+    </script>
 </body>
 </html>
